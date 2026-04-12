@@ -1,0 +1,352 @@
+{
+  "stages": [
+    {
+      "id": "dzialka",
+      "title": "I. Działka i warunki zabudowy",
+      "tasks": [
+        {
+          "id": "dzialka-mpzp",
+          "title": "Sprawdź Miejscowy Plan Zagospodarowania Przestrzennego (MPZP)",
+          "type": "formal",
+          "tip": "MPZP określa co możesz wybudować na działce: powierzchnię zabudowy, wysokość, kształt dachu. Sprawdź w urzędzie gminy lub na geoportalu. Jeśli MPZP nie istnieje dla Twojej działki, konieczne jest uzyskanie Warunków Zabudowy (WZ) — złóż wniosek do urzędu gminy przed zleceniem projektu."
+        },
+        {
+          "id": "dzialka-kw",
+          "title": "Sprawdź księgę wieczystą działki",
+          "type": "formal",
+          "tip": "Zweryfikuj: właściciela (czy sprzedający ma prawo sprzedać), służebności (np. przesyłu, drogi), hipoteki i obciążenia. Dostępne bezpłatnie online: ekw.ms.gov.pl — wpisz numer KW z aktu notarialnego."
+        },
+        {
+          "id": "dzialka-wz",
+          "title": "Uzyskaj Warunki Zabudowy (WZ) — jeśli brak MPZP",
+          "type": "formal",
+          "tip": "Wniosek składasz do urzędu gminy/miasta. Decyzja WZ może trwać 60–90 dni. WZ jest wymagane przed złożeniem projektu do urzędu. Nie jest wymagane jeśli działka ma MPZP."
+        },
+        {
+          "id": "dzialka-geologia",
+          "title": "Badanie geotechniczne gruntu",
+          "type": "technical",
+          "tip": "Technicznie nieobowiązkowe, ale kluczowe — typ fundamentów zależy od gruntu. Koszt: ok. 1 000–2 500 zł. Wyniki przekaż architektowi przed projektem fundamentów. Przy gruntach słabych (torf, nasypy) badanie jest niezbędne."
+        },
+        {
+          "id": "dzialka-mapa",
+          "title": "Uzyskaj aktualną mapę zasadniczą do celów projektowych",
+          "type": "formal",
+          "tip": "Zamów u geodety uprawnionego. Mapa jest potrzebna architektowi do naniesienia budynku na działce. Ważność: 3 lata. Koszt: ok. 500–1 000 zł."
+        },
+        {
+          "id": "dzialka-droga",
+          "title": "Sprawdź dostęp do drogi publicznej",
+          "type": "technical",
+          "tip": "Działka musi mieć bezpośredni dostęp do drogi publicznej lub przez ustanowioną służebność drogową. Brak dostępu uniemożliwia uzyskanie pozwolenia na budowę."
+        },
+        {
+          "id": "dzialka-energia",
+          "title": "Uzyskaj warunki techniczne przyłączenia do sieci energetycznej",
+          "type": "formal",
+          "tip": "Wniosek do lokalnego dystrybutora energii (np. Tauron, Enea, Energa). Czas oczekiwania: 30–60 dni. Warunki są potrzebne do projektu instalacji elektrycznej."
+        },
+        {
+          "id": "dzialka-wodkan",
+          "title": "Uzyskaj warunki techniczne przyłączenia do sieci wodociągowej i kanalizacyjnej",
+          "type": "formal",
+          "tip": "Wniosek do lokalnego zakładu wodociągów i kanalizacji. Jeśli brak sieci kanalizacyjnej — konieczna szambo lub przydomowa oczyszczalnia ścieków (wymagana zgoda wodnoprawna)."
+        }
+      ]
+    },
+    {
+      "id": "projekt",
+      "title": "II. Projekt budowlany",
+      "tasks": [
+        {
+          "id": "projekt-architekt",
+          "title": "Wybierz i podpisz umowę z architektem",
+          "type": "formal",
+          "tip": "Architekt musi mieć uprawnienia budowlane do projektowania. Umowa powinna określać: zakres projektu, harmonogram, prawa autorskie (prawo do adaptacji), cenę. Poproś o przykładowe realizacje. Koszt projektowania: ok. 4 000–15 000 zł w zależności od zakresu."
+        },
+        {
+          "id": "projekt-program",
+          "title": "Ustal z architektem program funkcjonalny domu",
+          "type": "technical",
+          "tip": "Przed projektem określ: liczba kondygnacji, powierzchnia, układ pomieszczeń, garaż (wbudowany / wolnostojący / brak), technologia budowy (murowana / drewniana / prefabrykowana), system ogrzewania. To są decyzje, które determinują cały projekt."
+        },
+        {
+          "id": "projekt-ogrzewanie",
+          "title": "Zdecyduj o systemie ogrzewania",
+          "type": "technical",
+          "tip": "Decyzja musi zapaść na etapie projektu, bo wpływa na przekroje instalacji, miejsce kotłowni i grubość ocieplenia. Opcje: pompa ciepła powietrzna (popularna, bez gazu), kocioł gazowy, kocioł na pellet. Pompa ciepła wymaga dobrego ocieplenia (U ≤ 0.15 W/m²K dla ścian)."
+        },
+        {
+          "id": "projekt-warunki-sieci",
+          "title": "Przekaż architektowi warunki techniczne od gestorów sieci",
+          "type": "formal",
+          "tip": "Architekt potrzebuje warunków przyłączenia energii, wody, kanalizacji i ewentualnie gazu do zaprojektowania przyłączy i instalacji. Bez nich projekt może wymagać poprawek po uzyskaniu warunków."
+        },
+        {
+          "id": "projekt-odbiór",
+          "title": "Odbierz projekt budowlany i sprawdź kompletność",
+          "type": "formal",
+          "tip": "Projekt budowlany powinien zawierać: projekt architektoniczno-budowlany, projekt zagospodarowania działki, opinie i uzgodnienia (np. ZUDP, rzeczoznawca p.poż. dla budynków powyżej 1 000 m³), oświadczenia projektantów. Sprawdź czy architekt złożył podpisy i pieczęcie na wszystkich rysunkach."
+        }
+      ]
+    },
+    {
+      "id": "pozwolenie",
+      "title": "III. Pozwolenie na budowę",
+      "tasks": [
+        {
+          "id": "pnb-dokumenty",
+          "title": "Skompletuj dokumenty do wniosku o pozwolenie na budowę",
+          "type": "formal",
+          "tip": "Wymagane dokumenty: wniosek PB-1 (formularz z gov.pl), 3 egzemplarze projektu budowlanego, oświadczenie o prawie do dysponowania nieruchomością na cele budowlane, decyzja WZ lub wypis z MPZP. Wniosek składa się do Starostwa Powiatowego lub Urzędu Miasta."
+        },
+        {
+          "id": "pnb-zlozone",
+          "title": "Złóż wniosek o pozwolenie na budowę",
+          "type": "formal",
+          "tip": "Organ ma 65 dni na wydanie decyzji. Jeśli wniosek ma braki — urząd wezwie do uzupełnienia (czas się zatrzymuje). Możliwość złożenia elektronicznie przez portal e-budownictwo.gunb.gov.pl. Opłata skarbowa: 1 zł za każdy m² pow. użytkowej (max 539 zł)."
+        },
+        {
+          "id": "pnb-prawomocna",
+          "title": "Poczekaj na prawomocność decyzji o pozwoleniu na budowę",
+          "type": "formal",
+          "tip": "Decyzja staje się prawomocna po 14 dniach od doręczenia wszystkim stronom (sąsiadom), jeśli nikt się nie odwołał. Nie zaczynaj budowy przed uzyskaniem prawomocności — to wykroczenie. Po 3 latach od prawomocności pozwolenie wygasa jeśli nie rozpoczęto budowy."
+        },
+        {
+          "id": "pnb-kierownik",
+          "title": "Ustanów kierownika budowy",
+          "type": "formal",
+          "tip": "Kierownik budowy musi mieć uprawnienia budowlane w odpowiedniej specjalności. Jest odpowiedzialny za prowadzenie dziennika budowy i nadzór nad wykonaniem zgodnym z projektem. Koszt: ok. 3 000–8 000 zł za cały nadzór."
+        },
+        {
+          "id": "pnb-dziennik",
+          "title": "Zarejestruj dziennik budowy",
+          "type": "formal",
+          "tip": "Od 2024 roku dziennik budowy prowadzony jest elektronicznie w systemie DOMB (dziennik.gunb.gov.pl). Kierownik budowy zakłada konto i rejestruje dziennik. Papierowy dziennik był obowiązkowy do 27.01.2023 dla nowych pozwoleń."
+        },
+        {
+          "id": "pnb-zawiadomienie",
+          "title": "Zawiadom organ nadzoru budowlanego (PINB) o zamiarze rozpoczęcia budowy",
+          "type": "formal",
+          "tip": "Zawiadomienie składa kierownik budowy minimum 7 dni przed planowanym rozpoczęciem robót. Dołącz: oświadczenie kierownika o przyjęciu obowiązków, dane projektantów, kopię uprawnień. Formularz: PB-9."
+        }
+      ]
+    },
+    {
+      "id": "fundamenty",
+      "title": "IV. Przygotowanie terenu i fundamenty",
+      "tasks": [
+        {
+          "id": "fund-geodeta",
+          "title": "Geodeta — wytyczenie budynku w terenie",
+          "type": "formal",
+          "tip": "Geodeta uprawniony wytycza narożniki budynku zgodnie z projektem zagospodarowania. Wytyczenie wpisuje do dziennika budowy. To obowiązkowy krok przed kopaniem wykopu. Koszt: ok. 800–1 500 zł."
+        },
+        {
+          "id": "fund-ogrodzenie",
+          "title": "Ogrodź plac budowy i ustaw tablicę informacyjną",
+          "type": "formal",
+          "tip": "Tablica informacyjna jest obowiązkiem prawnym — musi zawierać: numer pozwolenia, dane inwestora, dane kierownika budowy, planowany termin zakończenia. Ogrodzenie musi uniemożliwiać wejście osób nieuprawnionych."
+        },
+        {
+          "id": "fund-wykop",
+          "title": "Wykonaj wykop fundamentowy",
+          "type": "technical",
+          "tip": "Głębokość wykopu zgodna z projektem. Sprawdź czy grunt w dnie wykopu odpowiada temu z badania geotechnicznego. Jeśli natrafisz na inne warunki — natychmiast poinformuj kierownika budowy i projektanta. Nie zasypuj wykopu bez odbioru."
+        },
+        {
+          "id": "fund-lawy",
+          "title": "Wykonaj ławy lub płytę fundamentową",
+          "type": "technical",
+          "tip": "Beton fundamentowy zgodny z projektem (klasa minimum C16/20). Zbrojenie zgodnie z rysunkami projektu. Przed wylaniem betonu kierownik budowy powinien odebrać zbrojenie i wpisać do dziennika budowy."
+        },
+        {
+          "id": "fund-izolacja",
+          "title": "Wykonaj izolację przeciwwilgociową i termiczną fundamentów",
+          "type": "technical",
+          "tip": "Izolacja pozioma (ława — papa lub folia) i pionowa (ściana fundamentowa — masa bitumiczna + folia kubełkowa). Ocieplenie ław fundamentowych styropianem XPS (odporny na wodę). Niedostateczna izolacja = wilgoć w piwnicy lub na ścianach parteru."
+        },
+        {
+          "id": "fund-przylacza",
+          "title": "Wykonaj przyłącza (woda, kanalizacja, energia elektryczna)",
+          "type": "technical",
+          "tip": "Przyłącza buduje się na etapie fundamentów, bo rury muszą przechodzić przez lub pod fundamentem. Wykonaj je zanim zamurujesz ściany fundamentowe. Rury przepustowe przez ścianę muszą być w tulejach ochronnych."
+        }
+      ]
+    },
+    {
+      "id": "stan-surowy-otwarty",
+      "title": "V. Stan surowy otwarty",
+      "tasks": [
+        {
+          "id": "sso-sciany-parter",
+          "title": "Wykonaj ściany parteru",
+          "type": "technical",
+          "tip": "Technologia zgodna z projektem (beton komórkowy, ceramika poryzowana, keramzyt itp.). Sprawdź poziomowanie każdej warstwy. Szczelina dylatacyjna przy kominach. Bruzdy na instalacje wykonywać po wzniesieniu ścian, nie podczas murowania."
+        },
+        {
+          "id": "sso-strop",
+          "title": "Wykonaj strop nad parterem",
+          "type": "technical",
+          "tip": "Typ stropu zgodny z projektem (monolityczny, Teriva, Filigran, drewniany). Przed wylaniem stropu monolitycznego — odbiór zbrojenia przez kierownika budowy. Czas dojrzewania betonu stropu przed zdjęciem deskowania: min. 28 dni (zależnie od temperatury)."
+        },
+        {
+          "id": "sso-sciany-pietro",
+          "title": "Wykonaj ściany piętra (jeśli dotyczy)",
+          "type": "technical",
+          "tip": "Analogicznie jak ściany parteru. Zwróć uwagę na układanie przewodów wentylacyjnych i kominowych — przechodzą przez kilka kondygnacji i muszą być zaplanowane z wyprzedzeniem."
+        },
+        {
+          "id": "sso-wieniec",
+          "title": "Wykonaj wieniec żelbetowy i murłaty",
+          "type": "technical",
+          "tip": "Wieniec spina ściany i przenosi obciążenia z dachu. Murłaty (belki pod więźbę) kotwimy w wieńcu śrubami kotwiącymi. Murłaty impregnować środkiem ochrony drewna przed ułożeniem."
+        },
+        {
+          "id": "sso-wiezba",
+          "title": "Wykonaj więźbę dachową",
+          "type": "technical",
+          "tip": "Drewno na więźbę musi być suszone komorowo i zaimpregnowane. Projekt więźby powinien opracować konstruktor. Przed montażem sprawdź poziomowanie murłat. Wstępne krycie (folia lub membrana wstępnego krycia) montowane razem z więźbą — chroni budynek przed deszczem do czasu pokrycia."
+        },
+        {
+          "id": "sso-kominy",
+          "title": "Wykonaj kominy",
+          "type": "technical",
+          "tip": "Komin do kotła gazowego lub pompy ciepła (jeśli dotyczy): ceramiczny lub stalowy systemowy. Komin wentylacyjny: ceglany lub systemowy. Wysokość komina ponad kalenicą zgodna z normą (min. 0.6 m powyżej kalenicy w promieniu 10 m). Komin sprawdza kominiarz przed odbiorem."
+        }
+      ]
+    },
+    {
+      "id": "stan-surowy-zamkniety",
+      "title": "VI. Stan surowy zamknięty",
+      "tasks": [
+        {
+          "id": "ssz-dach",
+          "title": "Ułóż pokrycie dachowe",
+          "type": "technical",
+          "tip": "Kolejność: kontrłaty → łaty → pokrycie (dachówka ceramiczna, betonowa, blachodachówka, blacha na rąbek). Membrana wstępnego krycia musi być wentylowana — kontrłaty tworzą szczelinę wentylacyjną. Obróbki blacharskie (kominów, okien dachowych) wykonać szczelnie."
+        },
+        {
+          "id": "ssz-okna",
+          "title": "Zamontuj okna i drzwi zewnętrzne",
+          "type": "technical",
+          "tip": "Okna montować na ciepło (pianka + taśma paroprzepuszczalna na zewnątrz + taśma paroizolacyjna od wewnątrz). Parametr Uw dla okien: ≤ 0.9 W/m²K (standard) lub ≤ 0.6 W/m²K (pasywny). Sprawdź pionowanie i poziomowanie każdego okna przed ostatecznym montażem."
+        },
+        {
+          "id": "ssz-parapety",
+          "title": "Wykonaj parapety zewnętrzne i obróbki blacharskie",
+          "type": "technical",
+          "tip": "Parapety zewnętrzne z blachy z odpowiednim spadkiem (min. 5°) odprowadzającym wodę od elewacji. Rynny i rury spustowe montować na tym etapie — odprowadzają wodę z dachu i chronią fundamenty."
+        },
+        {
+          "id": "ssz-szczelnosc",
+          "title": "Sprawdź szczelność budynku przed sezonem grzewczym",
+          "type": "technical",
+          "tip": "Przed zimą budynek w stanie surowym zamkniętym powinien mieć: zamknięte wszystkie otwory okienne i drzwiowe, pokrycie dachu, odprowadzenie wody z dachu. Pozostawienie budynku bez pokrycia przez zimę grozi uszkodzeniem stropu i murów przez mróz."
+        }
+      ]
+    },
+    {
+      "id": "instalacje",
+      "title": "VII. Instalacje i wykończenie",
+      "tasks": [
+        {
+          "id": "inst-elektryka",
+          "title": "Wykonaj instalację elektryczną",
+          "type": "technical",
+          "tip": "Instalacja elektryczna musi być wykonana przez elektryka z odpowiednimi uprawnieniami (SEP do 1 kV). Projektuj obwody zgodnie z normą PN-HD 60364. Zaplanuj: obwody odbiorcze (po jednym na pomieszczenie), obwód kuchenki, pralki, klimatyzacji. Bruzdy zasypać przed tynkowaniem."
+        },
+        {
+          "id": "inst-elektryka-odbiór",
+          "title": "Odbiór instalacji elektrycznej — protokół pomiarowy",
+          "type": "formal",
+          "tip": "Obowiązkowy protokół pomiarów elektrycznych: rezystancja izolacji, ciągłość przewodów ochronnych, skuteczność ochrony przeciwporażeniowej. Wykonuje elektryk z uprawnieniami pomiarowymi. Protokół jest wymagany przy odbiorze budynku przez PINB."
+        },
+        {
+          "id": "inst-wodkan",
+          "title": "Wykonaj instalację wodociągową i kanalizacyjną",
+          "type": "technical",
+          "tip": "Rury kanalizacyjne w posadzce z odpowiednim spadkiem (min. 2% dla DN100). Izolacja rur wodociągowych ciepłej wody i cyrkulacji. Zawory odcinające przy każdym urządzeniu. Wewnętrzna kanalizacja musi być przewentylowana (pion kanalizacyjny ponad dach)."
+        },
+        {
+          "id": "inst-ogrzewanie",
+          "title": "Wykonaj instalację grzewczą",
+          "type": "technical",
+          "tip": "Ogrzewanie podłogowe: rury w wylewce, podłączone do rozdzielaczy. Grzejniki: na ścianach, z zaworami termostatycznymi. Pompę ciepła montuje się na zewnątrz (pompa powietrzna) lub w kotłowni (solanka-woda). Instalację grzewczą napełnić i sprawdzić ciśnienie przed wylewkami."
+        },
+        {
+          "id": "inst-wentylacja",
+          "title": "Wykonaj instalację wentylacji mechanicznej (rekuperacja)",
+          "type": "technical",
+          "tip": "Centralę rekuperacyjną montuje się zazwyczaj na poddaszu lub w kotłowni. Kanały wentylacyjne prowadzone w podwójnym suficie lub w posadzce. Uwaga: kanały muszą być zaizolowane termicznie w przestrzeni nieogrzewanej (poddasze). Rekuperator wymaga regularnej wymiany filtrów (co 3–6 miesięcy)."
+        },
+        {
+          "id": "inst-tynki",
+          "title": "Wykonaj tynki wewnętrzne",
+          "type": "technical",
+          "tip": "Tynki gipsowe (wewnątrz) lub cementowo-wapienne (łazienki). Przed tynkowaniem: wszystkie instalacje muszą być w brudach/bruzdach, okna zamknięte, temperatura powyżej +5°C. Tynk musi wyschnąć przed układaniem wylewki i podłóg (min. 4 tygodnie)."
+        },
+        {
+          "id": "inst-wylewki",
+          "title": "Wykonaj wylewki podłogowe",
+          "type": "technical",
+          "tip": "Wylewka anhydrytowa (szybkoschnąca) lub cementowa (twardsza). Na ogrzewaniu podłogowym: wylewka anhydrytowa min. 35 mm nad rurą, cementowa min. 45 mm. Wylewka anhydrytowa wymaga szlifowania i gruntowania przed układaniem podłogi."
+        },
+        {
+          "id": "inst-elewacja",
+          "title": "Wykonaj elewację (ocieplenie i tynk zewnętrzny)",
+          "type": "technical",
+          "tip": "System ETICS (styropian + siatka + tynk) lub elewacja wentylowana (wełna mineralna + okładzina). Grubość ocieplenia: min. 15 cm styropianu (λ=0.031–0.038) dla spełnienia WT 2021. Tynk silikonowy lub silikatowy — odporny na algi. Parapety zewnętrzne przed ociepleniem."
+        }
+      ]
+    },
+    {
+      "id": "odbiory",
+      "title": "VIII. Odbiory i formalności końcowe",
+      "tasks": [
+        {
+          "id": "odb-dokumentacja",
+          "title": "Skompletuj dokumentację powykonawczą",
+          "type": "formal",
+          "tip": "Dokumentacja powykonawcza: dziennik budowy (elektroniczny — DOMB), protokoły odbioru instalacji (elektryka, gaz), geodezyjna inwentaryzacja powykonawcza (geodeta uprawniony), oświadczenie kierownika budowy o zakończeniu budowy, atesty i certyfikaty wbudowanych materiałów."
+        },
+        {
+          "id": "odb-geodezja",
+          "title": "Zamów geodezyjną inwentaryzację powykonawczą",
+          "type": "formal",
+          "tip": "Geodeta mierzy rzeczywiste położenie budynku i nanosi go na mapę zasadniczą. Wynik trafia do zasobu geodezyjnego. Jest to obowiązkowy załącznik do zawiadomienia o zakończeniu budowy. Koszt: ok. 1 000–2 000 zł."
+        },
+        {
+          "id": "odb-kominiarz",
+          "title": "Odbiór kominiarniczy — protokół",
+          "type": "formal",
+          "tip": "Kominiarz sprawdza drożność i szczelność przewodów dymowych i wentylacyjnych. Protokół kominiarski jest wymagany przy odbiorze budynku. Zorganizuj odbiór przed zawiadomieniem PINB."
+        },
+        {
+          "id": "odb-pinb",
+          "title": "Zawiadom Powiatowy Inspektorat Nadzoru Budowlanego (PINB) o zakończeniu budowy",
+          "type": "formal",
+          "tip": "Formularz PB-16 składany przez inwestora lub kierownika budowy. Dołącz: oświadczenie kierownika, dziennik budowy, protokoły, inwentaryzację geodezyjną. PINB ma 14 dni na ewentualne wniesienie sprzeciwu. Jeśli nie wniesie — możesz użytkować budynek."
+        },
+        {
+          "id": "odb-licznik",
+          "title": "Zgłoś przyłącze i zamów montaż licznika energii elektrycznej",
+          "type": "formal",
+          "tip": "Po zakończeniu budowy złóż wniosek do dystrybutora energii o montaż licznika i zawarcie umowy o dostarczanie energii. Czas realizacji: 14–30 dni. Bez licznika nie możesz legalnie korzystać z prądu."
+        },
+        {
+          "id": "odb-ewidencja",
+          "title": "Zarejestruj budynek w ewidencji gruntów i budynków",
+          "type": "formal",
+          "tip": "Na podstawie geodezyjnej inwentaryzacji powykonawczej budynek zostaje wpisany do ewidencji przez geodetę. Sprawdź czy geodeta przekazał dokumentację do wydziału geodezji starostwa."
+        },
+        {
+          "id": "odb-podatek",
+          "title": "Zgłoś nieruchomość do podatku od nieruchomości w gminie",
+          "type": "formal",
+          "tip": "W ciągu 14 dni od dnia zakończenia budowy (lub dnia, w którym budynek zaczął być użytkowany) złóż IN-1 do gminy. Podatek od nieruchomości zależy od powierzchni użytkowej. Stawki ustalane są przez radę gminy."
+        }
+      ]
+    }
+  ]
+}
