@@ -8,15 +8,7 @@ interface Props {
 }
 
 function getRomanNumeral(title: string): string {
-  // Extract the roman numeral prefix from "I. Działka" → "I"
-  return title.split('.')[0].trim()
-}
-
-function toAccessibleLabel(title: string): string {
-  // Add zero-width space between triple-consecutive chars (e.g., "III" → "I​I​I")
-  // This prevents /II/i from matching "III" in aria-label queries
-  // while still allowing /II/i to match "II"
-  return title.replace(/(.)\1\1/g, (_m, c: string) => `${c}\u200b${c}\u200b${c}`)
+  return title.split('.')[0]
 }
 
 function isStageComplete(stage: Stage, progress: ProgressMap): boolean {
@@ -27,7 +19,6 @@ export function StageBar({ stages, currentIndex, progress, onSelect }: Props) {
   return (
     <nav className="bg-white border-b border-sand-200 shadow-sm">
       <div className="max-w-4xl mx-auto px-4 py-3">
-        {/* Stage tabs */}
         <div className="flex items-center gap-1 overflow-x-auto pb-1">
           {stages.map((stage, index) => {
             const isActive = index === currentIndex
@@ -38,7 +29,7 @@ export function StageBar({ stages, currentIndex, progress, onSelect }: Props) {
               <button
                 key={stage.id}
                 onClick={() => onSelect(index)}
-                aria-label={toAccessibleLabel(stage.title)}
+                aria-label={stage.title}
                 data-complete={complete ? 'true' : 'false'}
                 className={`
                   flex-shrink-0 w-9 h-9 rounded-full text-sm font-serif font-semibold
@@ -61,7 +52,6 @@ export function StageBar({ stages, currentIndex, progress, onSelect }: Props) {
           })}
         </div>
 
-        {/* Navigation */}
         <div className="flex items-center justify-between mt-2">
           <button
             onClick={() => onSelect(currentIndex - 1)}

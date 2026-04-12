@@ -43,7 +43,7 @@ describe('StageBar', () => {
     render(
       <StageBar stages={stages} currentIndex={1} progress={{}} onSelect={vi.fn()} />
     )
-    const activeButton = screen.getByRole('button', { name: /II/i })
+    const activeButton = screen.getByRole('button', { name: 'II. Projekt' })
     expect(activeButton).toHaveClass('bg-sand-400')
   })
 
@@ -52,7 +52,7 @@ describe('StageBar', () => {
     render(
       <StageBar stages={stages} currentIndex={0} progress={{}} onSelect={onSelect} />
     )
-    await userEvent.click(screen.getByRole('button', { name: /II/i }))
+    await userEvent.click(screen.getByRole('button', { name: 'II. Projekt' }))
     expect(onSelect).toHaveBeenCalledWith(1)
   })
 
@@ -66,7 +66,7 @@ describe('StageBar', () => {
       />
     )
     // Stage I is complete — its button should have data-complete="true"
-    const stageAButton = screen.getByRole('button', { name: /I/i })
+    const stageAButton = screen.getByRole('button', { name: 'I. Działka' })
     expect(stageAButton).toHaveAttribute('data-complete', 'true')
   })
 
