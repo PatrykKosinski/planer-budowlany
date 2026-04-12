@@ -82,10 +82,29 @@ export async function generatePdf(
     y -= LINE_HEIGHT
 
     for (const task of stage.tasks) {
-      ensureSpace(TASK_HEIGHT + 4)
-
       const isDone = !!progress[task.id]
       const checkboxSize = 10
+      const titleFontSize = 10
+      const maxTitleWidth = PAGE_WIDTH - PAGE_MARGIN * 2 - checkboxSize - 8
+
+      // Word-wrap BEFORE ensureSpace so we know actual height needed
+      const words = sanitize(task.title).split(' ')
+      const lines: string[] = []
+      let current = ''
+      for (const word of words) {
+        const candidate = current ? `${current} ${word}` : word
+        if (fontRegular.widthOfTextAtSize(candidate, titleFontSize) > maxTitleWidth) {
+          if (current) lines.push(current)
+          current = word
+        } else {
+          current = candidate
+        }
+      }
+      if (current) lines.push(current)
+
+      const taskHeight = Math.max(TASK_HEIGHT, lines.length * LINE_HEIGHT) + 6
+      ensureSpace(taskHeight)
+
       const checkboxX = PAGE_MARGIN
       const checkboxY = y - checkboxSize + 2
 
@@ -105,23 +124,7 @@ export async function generatePdf(
         })
       }
 
-      // Task label — wrap long titles
-      const maxTitleWidth = PAGE_WIDTH - PAGE_MARGIN * 2 - checkboxSize - 8
-      const titleFontSize = 10
-      const words = sanitize(task.title).split(' ')
-      const lines: string[] = []
-      let current = ''
-      for (const word of words) {
-        const candidate = current ? `${current} ${word}` : word
-        if (fontRegular.widthOfTextAtSize(candidate, titleFontSize) > maxTitleWidth) {
-          if (current) lines.push(current)
-          current = word
-        } else {
-          current = candidate
-        }
-      }
-      if (current) lines.push(current)
-
+      // Draw task title lines
       let lineY = y
       for (const line of lines) {
         page.drawText(line, {
