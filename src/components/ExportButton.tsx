@@ -19,8 +19,12 @@ export function ExportButton({ stages, progress }: Props) {
       const a = document.createElement('a')
       a.href = url
       a.download = 'planer-budowlany.pdf'
+      document.body.appendChild(a)
       a.click()
+      document.body.removeChild(a)
       URL.revokeObjectURL(url)
+    } catch (err) {
+      console.error('PDF export failed:', err)
     } finally {
       setLoading(false)
     }
