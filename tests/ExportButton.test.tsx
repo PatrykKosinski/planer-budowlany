@@ -20,8 +20,8 @@ const stages: Stage[] = [
 describe('ExportButton', () => {
   beforeEach(() => {
     vi.clearAllMocks()
-    global.URL.createObjectURL = vi.fn().mockReturnValue('blob:mock')
-    global.URL.revokeObjectURL = vi.fn()
+    globalThis.URL.createObjectURL = vi.fn().mockReturnValue('blob:mock')
+    globalThis.URL.revokeObjectURL = vi.fn()
   })
 
   it('renders export button', () => {
