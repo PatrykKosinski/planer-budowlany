@@ -306,7 +306,7 @@ function buildCover(): string {
 
 function buildToc(stages: Stage[]): string {
   let items = ''
-  stages.forEach((stage, si) => {
+  stages.forEach((stage) => {
     items += `
       <li class="toc-stage-item">
         <div class="toc-stage-label">
