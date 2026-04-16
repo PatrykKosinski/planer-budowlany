@@ -1,7 +1,8 @@
 import { marked } from 'marked'
 import type { Stage } from '../types'
 
-const contentModules = import.meta.glob('../content/tasks/*.md', {
+type GlobFn = (pattern: string, opts: object) => Record<string, () => Promise<unknown>>
+const contentModules = (import.meta as unknown as { glob: GlobFn }).glob('../content/tasks/*.md', {
   query: '?raw',
   import: 'default',
 })
