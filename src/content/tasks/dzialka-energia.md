@@ -2,7 +2,7 @@
 
 ## Czym są warunki techniczne przyłączenia?
 
-Warunki techniczne przyłączenia (WTP) to dokument wydawany przez lokalnego dystrybutora energii elektrycznej (OSD), który określa zasady i techniczne wymagania podłączenia Twojej działki lub domu do sieci elektroenergetycznej. Bez tego dokumentu projekt instalacji elektrycznej nie może być poprawnie opracowany, a docelowo nie otrzymasz licznika i nie podpiszesz umowy na dostawę energii.
+Warunki techniczne przyłączenia (WTP) to dokument wydawany przez lokalnego dystrybutora energii elektrycznej (OSD), który określa zasady i techniczne wymagania podłączenia Twojej działki lub domu do sieci elektroenergetycznej. Bez tego dokumentu projekt instalacji elektrycznej nie może być poprawnie opracowany — bez niego nie otrzymasz licznika ani nie podpiszesz umowy na dostawę energii.
 
 ## Kto wydaje warunki?
 
@@ -22,23 +22,23 @@ Pięciu głównych OSD w Polsce to: PGE Dystrybucja, Tauron Dystrybucja, Energa�
 
 **Krok 1: Określ zapotrzebowanie na moc**
 
-Dla typowego domu jednorodzinnego przyłączenie następuje do sieci niskiego napięcia (do 1 kV) i jest kwalifikowane do V grupy przyłączeniowej, jeśli moc nie przekracza 40 kW. Standardowo dla domu z płytą indukcyjną i podstawowym wyposażeniem wystarcza moc 3‑fazowa w przedziale około 12–15 kW. Jeśli planujesz większe odbiorniki (pompa ciepła, ładowarka samochodu elektrycznego, duża klimatyzacja), warto od razu wnioskować o moc rzędu 14–22 kW i przyłącze trójfazowe.
+Dla typowego domu jednorodzinnego przyłączenie następuje do sieci niskiego napięcia (do 1 kV) i jest kwalifikowane do V grupy przyłączeniowej, jeśli moc nie przekracza 40 kW. Standardowo dla domu z płytą indukcyjną i podstawowym wyposażeniem wystarcza moc 3‑fazowa ok. 12–15 kW. Jeśli planujesz większe odbiorniki (pompa ciepła, ładowarka samochodu elektrycznego, duża klimatyzacja), warto od razu wnioskować o moc rzędu 14–22 kW i przyłącze trójfazowe.
 
 **Krok 2: Złóż wniosek**
 
 Wniosek możesz złożyć:
 
-- elektronicznie przez e‑formularz na stronie OSD (najwygodniejsza opcja),
-- osobiście w punkcie obsługi klienta,
-- pocztą tradycyjną.
+- elektronicznie przez e‑formularz na stronie OSD (najwygodniejsza opcja)
+- osobiście w punkcie obsługi klienta
+- pocztą tradycyjną
 
 Typowo potrzebne są:
 
-- dane działki (numer, obręb, adres),
-- plan zabudowy lub szkic sytuacyjny z zaznaczeniem obiektu i proponowanego miejsca złącza,
-- określenie planowanej mocy przyłączeniowej (kW),
-- dane właściciela działki oraz dokument potwierdzający tytuł prawny (akt własności, umowa dzierżawy itp.),
-- ewentualne pełnomocnictwo, jeśli składa ktoś w Twoim imieniu.
+- dane działki (numer, obręb, adres)
+- plan zabudowy lub szkic sytuacyjny z zaznaczeniem obiektu i proponowanego miejsca złącza
+- określenie planowanej mocy przyłączeniowej (kW)
+- dane właściciela działki oraz dokument potwierdzający tytuł prawny (akt własności, umowa dzierżawy itp.)
+- ewentualne pełnomocnictwo, jeśli składa ktoś w Twoim imieniu
 
 Przydatne linki do wniosków online OSD:
 
@@ -58,10 +58,10 @@ W praktyce inwestorzy zwykle czekają na WTP około 2–6 tygodni.
 
 Dokument WTP określa m.in.:
 
-- miejsce przyłączenia do sieci (z której linii, w jakim punkcie sieci nN),
-- rodzaj przyłącza (kablowe lub napowietrzne),
-- wymaganą lokalizację złącza kablowo‑pomiarowego (szafki z licznikiem – zwykle w granicy działki od strony drogi),
-- parametry techniczne – m.in. moc przyłączeniową, grupę przyłączeniową, zabezpieczenia przedlicznikowe, wymagany układ pomiarowy.
+- miejsce przyłączenia do sieci (z której linii, w jakim punkcie sieci nN)
+- rodzaj przyłącza (kablowe lub napowietrzne)
+- wymaganą lokalizację złącza kablowo‑pomiarowego (szafki z licznikiem – zwykle w granicy działki od strony drogi)
+- parametry techniczne – m.in. moc przyłączeniową, grupę przyłączeniową, zabezpieczenia przedlicznikowe, wymagany układ pomiarowy
 
 Na podstawie WTP projektant instalacji elektrycznej dobiera przekroje kabli, zabezpieczenia, rozdzielnice i sposób prowadzenia przyłącza od złącza do budynku.
 
@@ -88,9 +88,9 @@ Jeżeli długość przyłącza przekracza 200 m, dystrybutor nalicza dodatkową 
 
 Oprócz opłaty przyłączeniowej na rzecz OSD doliczyć należy:
 
-- projekt instalacji i przyłącza – ok. 1 200–2 500 zł,
-- zakup i montaż złącza kablowego / szafki pomiarowej – ok. 2 000–4 000 zł,
-- wykonanie wewnętrznej linii zasilającej i instalacji w budynku – kilka–kilkanaście tysięcy złotych, zależnie od standardu i metrażu.
+- projekt instalacji i przyłącza – ok. 1 200–2 500 zł
+- zakup i montaż złącza kablowego / szafki pomiarowej – ok. 2 000–4 000 zł
+- wykonanie wewnętrznej linii zasilającej i instalacji w budynku – kilka–kilkanaście tysięcy złotych, zależnie od standardu i metrażu
 
 Łączny budżet na przyłącze i instalację elektryczną dla przeciętnego domu jednorodzinnego często zamyka się w widełkach **10–25 tys. zł**.
 
